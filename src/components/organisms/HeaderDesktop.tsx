@@ -78,7 +78,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ setHeaderOffset }) => {
                             </nav>
                         </div>
                         <div className="flex-shrink-0">
-                            <SolidButton>Reserva una llamada</SolidButton>
+                            <SolidButton>Contáctame</SolidButton>
                          </div>
                     </div>
                 </header>
@@ -104,7 +104,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ setHeaderOffset }) => {
                         }}
                     >
                         <div className="flex items-center justify-around w-[657px] h-[28px] mx-auto">
-                            <nav className="flex flex-nowrap gap-5">
+                            <nav className="flex flex-nowrap gap-8">
                                 {navLinks.map((link) => (
                                     <a
                                         key={link.label}
@@ -116,7 +116,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ setHeaderOffset }) => {
                                 ))}
                             </nav>
                             <div className="flex-shrink-0">
-                                <SolidButton>Reserva una llamada</SolidButton>
+                                <SolidButton>Contáctame</SolidButton>
                             </div>
                         </div>
                     </div>

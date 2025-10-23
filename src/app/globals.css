@@ -10,6 +10,10 @@
   --foreground: #030714;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .font-sf {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;

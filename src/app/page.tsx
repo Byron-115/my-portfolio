@@ -6,13 +6,15 @@ import AboutSection from "@/components/organisms/AboutSection";
 import ContactSection from "@/components/organisms/ContactSection";
 import CvSection from "@/components/organisms/CvSection";
 import Footer from "@/components/organisms/Footer";
+import HeaderMobile from "@/components/organisms/HeaderMobile";
 
 
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col gap-72">
+      <div className="flex flex-col gap-12">
         <HeaderDesktop />
+        <HeaderMobile />
         <HeroSection />
         <AboutSection />
         <ProjectSection />

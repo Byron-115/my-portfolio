@@ -3,7 +3,7 @@ import Image from "next/image";
 
 
 const HeroSection: React.FC = () => (
-  <section className="flex flex-col items-center justify-start w-full max-w-266 mx-auto px-6.75 xl:px-0 sm:mt-24 pt-36 xl:pt-24 gap-8">
+  <section id="hero"className="flex flex-col items-center justify-start w-full max-w-266 mx-auto px-12 xl:px-0 py-8 xl:mt-32 gap-8 bg-red-500">
     {/* Contenedor de texto principal */}
       {/* Título */}
         <h1 className="text-white font-medium text-2xl sm:text-4xl xl:text-5xl text-center w-full sm:max-w-115 xl:max-w-250 mx-auto">

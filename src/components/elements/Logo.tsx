@@ -6,8 +6,8 @@ const Logo: React.FC = () => (
         <Image
             src="/assets/logo_dark.png"
             alt="Logo Byron"
-            width={115}
-            height={26}
+            width={50}
+            height={50}
             priority                
         />
     </a>

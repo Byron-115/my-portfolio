@@ -4,11 +4,11 @@ import Logo from "../elements/Logo";
 import SolidButton from "../elements/SolidButton";
 
 const navLinks = [
-    { href: "#", label: "Inicio" },
-    { href: "#", label: "Sobre mí" },
-    { href: "#", label: "Proyectos" },
-    { href: "#", label: "Contacto" },
-    { href: "#", label: "CV" },
+    { href: "#hero", label: "Inicio" },
+    { href: "#about", label: "Sobre mí" },
+    { href: "#projects", label: "Proyectos" },
+    { href: "#contact", label: "Contacto" },
+    { href: "#cv", label: "CV" },
 ];
 
 interface HeaderDesktopProps {
@@ -54,7 +54,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ setHeaderOffset }) => {
                         font-sf-compact hidden md:flex fixed top-[45px] left-0 w-full
                         z-50 
                         transition-transform duration-300 ease-in-out
-                        pointer-events-auto bg-transparent
+                        pointer-events-auto bg-blue-500
                     `}
                     style={{
                         transform: `translateY(-${headerOffset}px)`,

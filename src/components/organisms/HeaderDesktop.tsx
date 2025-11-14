@@ -70,7 +70,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ setHeaderOffset }) => {
                                     <a 
                                         key={link.label}
                                         href={link.href}
-                                        className="text-[#ecffe0] font-semibold text-sm hover:text-[#00B3B0] transition-colors whitespace-nowrap"
+                                        className="text-[#ecffe0] font-semibold text-sm hover:text-[#00f4f0] transition-colors whitespace-nowrap"
                                     >
                                         {link.label}
                                     </a>
@@ -109,7 +109,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ setHeaderOffset }) => {
                                     <a
                                         key={link.label}
                                         href={link.href}
-                                        className="text-[#ecffe0] font-semibold text-sm hover:text-lime-300 transition-colors whitespace-nowrap"
+                                        className="text-[#ecffe0] font-semibold text-sm hover:text-[#00f4f0] transition-colors whitespace-nowrap"
                                     >
                                         {link.label}
                                     </a>

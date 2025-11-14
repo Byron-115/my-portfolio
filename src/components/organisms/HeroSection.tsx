@@ -3,13 +3,13 @@ import Image from "next/image";
 
 
 const HeroSection: React.FC = () => (
-  <section id="hero"className="flex flex-col items-center justify-start w-full max-w-266 mx-auto px-12 xl:px-0 py-8 xl:mt-32 gap-8 bg-red-500">
+  <section id="hero"className="flex flex-col items-center justify-start w-full max-w-266 mx-auto px-12 pt-32 xl:px-0 py-8 xl:mt-32 gap-8 bg-red-500">
     {/* Contenedor de texto principal */}
       {/* Título */}
         <h1 className="text-white font-medium text-2xl sm:text-4xl xl:text-5xl text-center w-full sm:max-w-115 xl:max-w-250 mx-auto">
           Construyo experiencias digitales únicas que
         </h1>
-        <span className="text-[#00b3b0] text-2xl sm:text-4xl xl:text-5xl font-medium text-center w-full">transforman ideas en resultados</span>
+        <span className="text-[#00f4f0] text-2xl sm:text-4xl xl:text-5xl font-medium text-center w-full">transforman ideas en resultados</span>
       {/* Subtítulo + botón */}
       <div className="flex flex-col w-full max-w-[846px] items-center gap-8">
           <p className="use-system-font text-white font-light leading-1.56 xl:leading-[1.4] text-lg xl:text-xl text-center max-w-74 sm:max-w-144 xl:max-w-150 mx-auto">

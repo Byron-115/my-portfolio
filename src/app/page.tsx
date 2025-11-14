@@ -7,6 +7,7 @@ import ContactSection from "@/components/organisms/ContactSection";
 import CvSection from "@/components/organisms/CvSection";
 import Footer from "@/components/organisms/Footer";
 import HeaderMobile from "@/components/organisms/HeaderMobile";
+import ExperienceSection from "@/components/organisms/ExperienceSection";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <HeaderDesktop />
         <HeaderMobile />
         <HeroSection />
+        <ExperienceSection />
         <AboutSection />
         <ProjectSection />
         <ContactSection />

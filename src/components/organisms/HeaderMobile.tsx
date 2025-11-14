@@ -32,7 +32,7 @@ const HeaderMobile: React.FC = () => {
           xmlns="http://www.w3.org/2000/svg" 
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="2"
+          strokeWidth="2"
           stroke="currentColor"
           className="size-6"
           >

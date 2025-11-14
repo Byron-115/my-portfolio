@@ -5,6 +5,7 @@ import SolidButton from "../elements/SolidButton";
 
 const navLinks = [
     { href: "#hero", label: "Inicio" },
+    { href: "#experience", label: "Experiencia" },
     { href: "#about", label: "Sobre mí" },
     { href: "#projects", label: "Proyectos" },
     { href: "#contact", label: "Contacto" },

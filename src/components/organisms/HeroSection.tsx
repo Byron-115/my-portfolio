@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import SolidButton from "../elements/SolidButton";
 
 
 const HeroSection: React.FC = () => (
@@ -16,11 +17,9 @@ const HeroSection: React.FC = () => (
             Soy desarrollador web Full-Stack especializado en crear sitios web modernos, rápidos y funcionales que impulsan tu presencia online.
           </p>
         
-          <button
-            className="h-10 bg-[#00B3B0] hover:bg-[#aefffd] text-black use-system-font font-semibold rounded-full flex items-center justify-center pl-4 pr-3 gap-1 transition-colors cursor-pointer"
-          >
-            Hablemos
-            <span className="flex items-center justify-center self-center">
+        <div className="pl-4 pr-3 bg-yellow-500 flex flex-row justify-between items-center">
+          <SolidButton>Hablemos</SolidButton>
+            <span className="flex items-center justify-center self-center bg-white rounded-full w-5 h-5">
               <Image
                 src="/assets/icon-arrow-up-right.png"
                 alt="Arrow Right Icon"
@@ -28,7 +27,8 @@ const HeroSection: React.FC = () => (
                 height={20}
                 />
             </span>
-          </button>
+          
+        </div>
       </div>
   </section>
 );

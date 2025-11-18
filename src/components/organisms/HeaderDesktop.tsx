@@ -78,7 +78,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ setHeaderOffset }) => {
                                 ))}
                             </nav>
                         </div>
-                        <div className="flex-shrink-0">
+                        <div className="flex-shrink-0 pr-1">
                             <SolidButton>Contáctame</SolidButton>
                          </div>
                     </div>

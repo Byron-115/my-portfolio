@@ -55,7 +55,7 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ setHeaderOffset }) => {
                         font-sf-compact hidden md:flex fixed top-[45px] left-0 w-full
                         z-50 
                         transition-transform duration-300 ease-in-out
-                        pointer-events-auto bg-blue-500
+                        pointer-events-auto
                     `}
                     style={{
                         transform: `translateY(-${headerOffset}px)`,

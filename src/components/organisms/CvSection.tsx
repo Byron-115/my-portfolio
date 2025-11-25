@@ -3,8 +3,16 @@ import SolidButton from '../elements/SolidButton'
 
 function CvSection() {
   const handleDownload = async () => {
-      const baseUrl = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:4000';
-      window.location.href = `${baseUrl}/download-cv`;
+      // const baseUrl = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:4000';
+      // window.location.href = `${baseUrl}/download-cv`;
+
+      const link = document.createElement('a');
+      link.href = '/Byron_Panimboza_CV.pdf';
+      link.download = 'Byron_Panimboza_CV.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
   }
 
   return (
@@ -15,8 +23,6 @@ function CvSection() {
         <SolidButton onClick={handleDownload}>Descargar mi CV</SolidButton>
         </section>
     </div>
-
-    
   )
 }
 

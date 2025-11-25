@@ -20,17 +20,20 @@ const HeroSection: React.FC = () => (
     {/* Contenedor de texto principal */}
       {/* Título */}
         <h1 className="text-white font-medium text-2xl sm:text-4xl xl:text-5xl text-center w-full sm:max-w-115 xl:max-w-250 mx-auto">
-          Construyo experiencias digitales únicas que
+          Full-Stack Developer con
         </h1>
-        <span className="text-[#00f4f0] text-2xl sm:text-4xl xl:text-5xl font-medium text-center w-full">transforman ideas en resultados</span>
+        <span className="text-[#00f4f0] text-2xl sm:text-4xl xl:text-5xl font-medium text-center w-full">
+          con Máster en Ciberseguridad</span>
       {/* Subtítulo + lista iconos + botón */}
       <div className="flex flex-col w-full max-w-[846px] items-center gap-8">
           <p className="use-system-font text-white font-light leading-1.56 xl:leading-[1.4] text-lg xl:text-xl text-center max-w-74 sm:max-w-144 xl:max-w-150 mx-auto">
-            Soy desarrollador web Full-Stack especializado en crear sitios web modernos, rápidos y funcionales que impulsan tu presencia online.
+            Especializado en del desarrollo de MVPs desde cero y arquitecturas seguras.
+            <br/> 
+            Experiencia trabajando en equipos ágiles con React, Typescript y Node.js para crear productos modernos y robustos. 
           </p>
         
         {/* Lista de iconos */}
-        <div className="flex flex-row gap-4 items-center mr-0 pb-5">
+        <div className="flex flex-row gap-4 items-center mr-0 pb-5 bg-[#007775] bg-opacity-50 p-5 rounded-lg">
         {icons.map((src, i) => (
           <Image
             key={i}
@@ -38,7 +41,7 @@ const HeroSection: React.FC = () => (
             alt=""
             width={52}
             height={52}
-            className="w-13 h-13 opacity-90"
+            className="w-13 h-13"
           />
         ))}
       </div>

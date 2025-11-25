@@ -4,7 +4,7 @@ function AboutSection() {
   return (
     <div>
       <h2>Sobre mí</h2>
-      <section id="about" className="...">
+      <section id="about" className="p-5 my-5 border-b border-[#005a59] flex flex-col gap-4">
         <p>Desarrollador Web entusiasta y dedicado, con una sólida formación 
           en tecnologías de desarrollo frontend y backend. Graduado como 
           técnico Superior en <b>Desarrollo de Aplicaciones Web</b>, además de

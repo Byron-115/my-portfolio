@@ -5,14 +5,14 @@ const projects = [
   {
     title: "Davante Simulator Platform",
     description: "Lideré el frontend de un MVP SaaS para la gestión centralizada de simuladores 3D. Implementé autenticación robusta, integración compleja con Unity WebGL y un dashboard administrativo.",
-    imageUrl: "/images/project1.jpg",
+    imageUrl: "/assets/Davante_simulator.png",
     repoUrl: "",
     tags: ["React", "TypeScript", "Node.js", "TailwindCSS", "Unity WebGL", "JWT", "Docker", "AWS"]
   },
   {
     title: "Portfolio Website",
     description: "Portafolio personal desarrollado con arquitectura moderna y enfoque en performance. Implementación de CI/CD con Vercel y buenas prácticas de seguridad.",
-    imageUrl: "/images/project1.jpg",
+    imageUrl: "/assets/Portfolio.png",
     repoUrl: "",
     tags: ["React", "TypeScript", "Node.js"]
   },
@@ -56,7 +56,7 @@ function ProjectSection() {
           href="https://github.com/Byron-115"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-white border-b border-[#00B3B0] pb-1 hover:text-[#00B3B0] transition-colors"
+          className="inline-flex items-center gap-2 text-white border-b border-[#00B3B0] pb-1 hover:text-[#00B3B0] transition-colors my-6"
           >
             Ver más repositorios en Github
            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">

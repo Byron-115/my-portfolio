@@ -5,14 +5,14 @@ const projects = [
   {
     title: "Davante Simulator Platform",
     description: "Lideré el frontend de un MVP SaaS para la gestión centralizada de simuladores 3D. Implementé autenticación robusta, integración compleja con Unity WebGL y un dashboard administrativo.",
-    imageUrl: "/assets/Davante_simulator.png",
+    imageUrl: "/assets/davante_simulator.png",
     repoUrl: "",
     tags: ["React", "TypeScript", "Node.js", "TailwindCSS", "Unity WebGL", "JWT", "Docker", "AWS"]
   },
   {
     title: "Portfolio Website",
     description: "Portafolio personal desarrollado con arquitectura moderna y enfoque en performance. Implementación de CI/CD con Vercel y buenas prácticas de seguridad.",
-    imageUrl: "/assets/Portfolio.png",
+    imageUrl: "/assets/portfolio.png",
     repoUrl: "",
     tags: ["React", "TypeScript", "Node.js"]
   },

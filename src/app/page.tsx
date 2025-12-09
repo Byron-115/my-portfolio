@@ -8,12 +8,15 @@ import CvSection from "@/components/organisms/CvSection";
 import Footer from "@/components/organisms/Footer";
 import HeaderMobile from "@/components/organisms/HeaderMobile";
 import ExperienceSection from "@/components/organisms/ExperienceSection";
+import { Analytics } from "@vercel/analytics/next";
+
 
 
 export default function Home() {
   return (
     <>
       <div className="flex flex-col gap-12">
+        <Analytics />
         <HeaderDesktop />
         <HeaderMobile />
         <HeroSection />

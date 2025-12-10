@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => (
           Full-Stack Developer con
         </h1>
         <span className="text-[#00f4f0] text-2xl sm:text-4xl xl:text-5xl font-medium text-center w-full">
-          con Máster en Ciberseguridad</span>
+          Máster en Ciberseguridad</span>
       {/* Subtítulo + lista iconos + botón */}
       <div className="flex flex-col w-full max-w-[846px] items-center gap-8">
           <p className="use-system-font text-white font-light leading-1.56 xl:leading-[1.4] text-lg xl:text-xl text-center max-w-74 sm:max-w-144 xl:max-w-150 mx-auto">

@@ -29,11 +29,11 @@ const projects = [
 
 function ProjectSection() {
   return (
-    <section id="projects" className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
+    <section id="projects" className="py-10 px-4 md:px-8 max-w-7xl mx-auto">
       {/* Cabecera de la sección */}
       <div className="mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          Projects<span className="text-[#00B3B0]">.</span>
+          Proyectos<span className="text-[#00B3B0]">.</span>
         </h2>
         <p className="text-gray-400 max-w-2xl text-lg">
           Una selección de desarrollos donde combino ingeniería del software eficiente con soluciones funcionales

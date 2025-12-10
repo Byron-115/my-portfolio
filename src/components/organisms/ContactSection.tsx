@@ -2,8 +2,10 @@ import React from 'react'
 
 function ContactSection() {
   return (
-    <div className="p-5 my-5 border-b border-[#005a59]">
-      <h2>ContactSection</h2>
+    <div className="py-10 px-4 md:px-8 max-w-7xl mx-auto">
+      <h2 className='text-4xl md:text-5xl font-bold text-white mb-4'>
+        Contacto<span className="text-[#00B3B0]">.</span>
+        </h2>
       <p className="flex justify-center pb-4">¿Quieres contactarme?</p>
       <section id="contact" className={'flex flex-col gap-4 text-black shadow-[0_2px_6.9px_0px_##00B3B0] border-1 border-black bg-black p-3 rounded-lg w-full max-w-sm md:max-w-md xl:max-w-xl mx-auto'}
         style={{

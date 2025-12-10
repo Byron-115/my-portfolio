@@ -2,8 +2,10 @@ import React from 'react'
 
 function AboutSection() {
   return (
-    <div>
-      <h2>Sobre mí</h2>
+    <div className='py-10 px-4 md:px-8 max-w-7xl mx-auto'>
+      <h2 className='text-4xl md:text-5xl font-bold text-white mb-4'>
+        Sobre mí<span className="text-[#00B3B0]">.</span>
+        </h2>
       <section id="about" className="p-5 my-5 border-b border-[#005a59] flex flex-col gap-4">
         <p>Desarrollador Web entusiasta y dedicado, con una sólida formación 
           en tecnologías de desarrollo frontend y backend. Graduado como 

@@ -2,11 +2,13 @@ import React from 'react'
 
 function ExperienceSection() {
   return (
-    <div>
-      <h1>Experiencia</h1>
+    <div className='py-10 px-4 md:px-8 max-w-7xl mx-auto'>
+      <h1 className='text-4xl md:text-5xl font-bold text-white mb-4'>
+        Experiencia<span className="text-[#00B3B0]">.</span>
+      </h1>
       
-      <section id="experience" className="p-5 my-5 border-b border-[#005a59]">
-        <h1>Desarrollador Web Full Stack (Prácticas) | Davante 3 meses | Madrid, Remoto</h1>
+      <section id="experience" className="p-5 my-5 border-b border-[#005a59] ">
+        <h1><strong>Desarrollador Web Full Stack (Prácticas) | Davante 3 meses | Madrid, Remoto</strong></h1>
         <p>
             <br/>
             Lideré el desarrollo del frontend para el MVP de una plataforma educativa de simuladores 3D, trabajando directamente en la arquitectura y la integración de tecnologías.

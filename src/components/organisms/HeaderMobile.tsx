@@ -58,9 +58,11 @@ const HeaderMobile: React.FC = () => {
               {link.label}
             </a>
           ))}
-          <div className="flex-shrink-0">
+          <a href="#contact">
+            <div className="flex-shrink-0">
               <SolidButton>Contáctame</SolidButton>
-          </div>
+            </div>
+          </a>
         </div>
       )}
     </div>

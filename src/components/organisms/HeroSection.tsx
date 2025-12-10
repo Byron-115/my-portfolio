@@ -27,13 +27,13 @@ const HeroSection: React.FC = () => (
       {/* Subtítulo + lista iconos + botón */}
       <div className="flex flex-col w-full max-w-[846px] items-center gap-8">
           <p className="use-system-font text-white font-light leading-1.56 xl:leading-[1.4] text-lg xl:text-xl text-center max-w-74 sm:max-w-144 xl:max-w-150 mx-auto">
-            Especializado en del desarrollo de MVPs desde cero y arquitecturas seguras.
+            Especializado en el desarrollo de MVPs desde cero y arquitecturas seguras.
             <br/> 
             Experiencia trabajando en equipos ágiles con React, Typescript y Node.js para crear productos modernos y robustos. 
           </p>
         
         {/* Lista de iconos */}
-        <div className="flex flex-row gap-4 items-center mr-0 pb-5 bg-[#007775] bg-opacity-50 p-5 rounded-lg">
+        <div className="md:flex md:flex-row grid sm:grid-cols-5 grid-cols-3 gap-4 items-center mr-0 pb-5 bg-[#007775] bg-opacity-50 p-5 rounded-lg">
         {icons.map((src, i) => (
           <Image
             key={i}
@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => (
           />
         ))}
       </div>
-
+      <a href="#contact">
         <SolidButton>
           <div className="pl-4 pr-3 flex flex-row justify-between items-center">
             Hablemos
@@ -59,7 +59,8 @@ const HeroSection: React.FC = () => (
               </span>
           </div>
         </SolidButton>
-      </div>
+      </a>
+    </div>
   </section>
 );
 

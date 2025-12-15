@@ -16,18 +16,20 @@ import Snowfall from "react-snowfall";
 export default function Home() {
   return (
     <>
-    <Snowfall />
-      <div className="flex flex-col gap-12">
-        <Analytics />
-        <HeaderDesktop />
-        <HeaderMobile />
-        <HeroSection />
-        <ExperienceSection />
-        <AboutSection />
-        <ProjectSection />
-        <ContactSection />
-        <CvSection />
-        <Footer />
+    <div className="relative min-h-screen w-full overflow-x-hidden">
+      <Snowfall />
+        <div className="flex flex-col gap-12">
+          <Analytics />
+          <HeaderDesktop />
+          <HeaderMobile />
+          <HeroSection />
+          <ExperienceSection />
+          <AboutSection />
+          <ProjectSection />
+          <ContactSection />
+          <CvSection />
+          <Footer />
+        </div>
       </div>
     </>
   )

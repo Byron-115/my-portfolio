@@ -9,12 +9,14 @@ import Footer from "@/components/organisms/Footer";
 import HeaderMobile from "@/components/organisms/HeaderMobile";
 import ExperienceSection from "@/components/organisms/ExperienceSection";
 import { Analytics } from "@vercel/analytics/next";
+import Snowfall from "react-snowfall";
 
 
 
 export default function Home() {
   return (
     <>
+    <Snowfall />
       <div className="flex flex-col gap-12">
         <Analytics />
         <HeaderDesktop />

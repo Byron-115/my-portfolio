@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectCard from '../elements/ProjectCard';
-import davanteImg from '/assets/davante_simulator.png';
-import portfolioImg from '/assets/portfolio.png';
+import davanteImg from '../../../public/assets/davante_simulator.png';
+import portfolioImg from '../../../public/assets/portfolio.png';
 
 const projects = [
   {

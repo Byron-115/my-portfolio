@@ -1,10 +1,10 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface ProjectCardProps {
     title: string;
     description: string;
-    imageUrl: string;
+    imageUrl: string | StaticImageData;
     repoUrl?: string;
     tags?: string[];
 }

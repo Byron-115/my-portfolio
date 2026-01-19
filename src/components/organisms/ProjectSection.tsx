@@ -1,20 +1,19 @@
 import React from 'react'
 import ProjectCard from '../elements/ProjectCard';
-import davanteImg from '/assets/davante_simulator.png';
-import portfolioImg from '/assets/portfolio.png';
+
 
 const projects = [
   {
     title: "Davante Simulator Platform",
     description: "Lideré el frontend de un MVP SaaS para la gestión centralizada de simuladores 3D. Implementé autenticación robusta, integración compleja con Unity WebGL y un dashboard administrativo.",
-    imageUrl: "../../../public/assets/davante_simulator.png",
+    imageUrl: "/assets/davante_simulator.png",
     repoUrl: "",
     tags: ["React", "TypeScript", "Node.js", "TailwindCSS", "Unity WebGL", "JWT", "Docker", "AWS"]
   },
   {
     title: "Portfolio Website",
     description: "Portafolio personal desarrollado con arquitectura moderna y enfoque en performance. Implementación de CI/CD con Vercel y buenas prácticas de seguridad.",
-    imageUrl: "../../../public/assets/portfolio.png",
+    imageUrl: "/assets/portfolio.png",
     repoUrl: "",
     tags: ["React", "TypeScript", "Node.js"]
   },
@@ -57,7 +56,6 @@ function ProjectSection() {
         <a 
           href="https://github.com/Byron-115"
           target="_blank"
-          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-white border-b border-[#00B3B0] pb-1 hover:text-[#00B3B0] transition-colors my-6"
           >
             Ver más repositorios en Github

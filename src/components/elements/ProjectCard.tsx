@@ -14,7 +14,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
         <a
             href = {repoUrl || '#'}
             target = "_blank"
-            rel = "noopener noreferrer"
             className = "group flex flex-col w-full h-full bg-[#111] hover:bg-[#1a1a1a] transition-colors duration-300 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-600"
         >
             {/* Image Section */}
@@ -23,8 +22,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
                     <Image
                         src = {imageUrl}
                         alt = {title}
-                        fill
-                        className="object-cover object-top"
+                        width={400}
+                        height={300}
+                        className="object-cover object-top w-full h-full"
                     />
                 </div>
             </div>

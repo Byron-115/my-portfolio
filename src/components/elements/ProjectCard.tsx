@@ -1,5 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
+//import Image from 'next/image';
+import { CldImage } from 'next-cloudinary';
+
 
 interface ProjectCardProps {
     title: string;
@@ -19,13 +21,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
             {/* Image Section */}
             <div className="w-full h-64 bg-gray-200 relative overflow-hidden flex items-center justify-center">
                 <div className="relative w-[90%] h-[85%] shadow-2xl transition-transform duration-500 group-hover:scale-105 group-hover:-translate-y-2 rounded-t-lg overflow-hidden">
-                    <Image
+                    <CldImage
                         src = {imageUrl}
                         alt = {title}
                         width={400}
                         height={300}
                         sizes='(max-width: 640px) 90vw, (max-width: 1024px) 50vw, 33vw'
-                        unoptimized={true}
+
                         className="object-cover object-top w-full h-full"
                     />
                 </div>

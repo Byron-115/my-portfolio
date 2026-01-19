@@ -24,6 +24,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
                         alt = {title}
                         width={400}
                         height={300}
+                        sizes='(max-width: 640px) 90vw, (max-width: 1024px) 50vw, 33vw'
+                        unoptimized={true}
                         className="object-cover object-top w-full h-full"
                     />
                 </div>

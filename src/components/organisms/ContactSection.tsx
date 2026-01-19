@@ -2,22 +2,22 @@ import React from 'react'
 
 function ContactSection() {
   return (
-    <div className="py-10 px-4 md:px-8 max-w-7xl mx-auto">
-      <h2 className='text-4xl md:text-5xl font-bold text-white mb-4'>
+    <section id= "contact" className="py-10 px-4 md:px-8 max-w-7xl mx-auto">
+      <h1 className='text-4xl md:text-5xl font-bold text-white mb-4'>
         Contacto<span className="text-[#00B3B0]">.</span>
-        </h2>
-      <p className="flex justify-center pb-4">¿Quieres contactarme?</p>
-      <section id="contact" className={'flex flex-col gap-4 text-black shadow-[0_2px_6.9px_0px_##00B3B0] border-1 border-black bg-black p-3 rounded-lg w-full max-w-sm md:max-w-md xl:max-w-xl mx-auto'}
+        </h1>
+      <p className="pb-4">¿Quieres contactarme?</p>
+      <form className={'flex flex-col gap-4 text-black border border-black bg-black p-6 rounded-lg w-full '}
         style={{
           boxShadow: "0 2px 6.9px 0 #00B3B0",
         }}>
-        <input type="text" placeholder="Nombre" className="border border-[#00B3B0] rounded-md" />
-        <input type="email" placeholder="Email" className="border border-[#00B3B0] rounded-md" />
-        <input type="tel" placeholder="Teléfono" className="border border-[#00B3B0] rounded-md" />
-        <textarea placeholder="Comentarios" className="h-32 border border-[#00B3B0] rounded-md"></textarea>
-        <button className="bg-[#00B3B0] rounded-full font-bold text-black">Enviar</button>
-      </section>
-    </div>
+        <input type="text" placeholder="Nombre" className="border border-[#00B3B0] rounded-md p-2" />
+        <input type="email" placeholder="Email" className="border border-[#00B3B0] rounded-md p-2" />
+        <input type="tel" placeholder="Teléfono" className="border border-[#00B3B0] rounded-md p-2" />
+        <textarea placeholder="Comentarios" className="h-40 border border-[#00B3B0] rounded-md p-2"></textarea>
+        <button className="bg-[#00B3B0] rounded-full font-bold text-black py-2">Enviar</button>
+      </form>
+    </section>
   )
 }
 

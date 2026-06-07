@@ -9,16 +9,18 @@ import Footer from "@/components/organisms/Footer";
 import HeaderMobile from "@/components/organisms/HeaderMobile";
 import ExperienceSection from "@/components/organisms/ExperienceSection";
 import { Analytics } from "@vercel/analytics/next";
-import Snowfall from "react-snowfall";
-
-
+import { LanguageProvider } from "@/context/LanguageContext";
 
 export default function Home() {
   return (
-    <>
-    <div className="relative min-h-screen w-full overflow-x-hidden">
-      <Snowfall />
-        <div className="flex flex-col gap-12">
+    <LanguageProvider>
+      <div className="relative min-h-screen w-full overflow-x-hidden bg-[#030712]">
+        {/* Ambient background glows */}
+        <div className="ambient-glow glow-1" />
+        <div className="ambient-glow glow-2" />
+        <div className="ambient-glow glow-3" />
+        
+        <div className="relative z-10 flex flex-col gap-12">
           <Analytics />
           <HeaderDesktop />
           <HeaderMobile />
@@ -31,6 +33,6 @@ export default function Home() {
           <Footer />
         </div>
       </div>
-    </>
-  )
+    </LanguageProvider>
+  );
 }

@@ -1,21 +1,24 @@
-import React from 'react'
-import Logo from '../elements/Logo'
+import React from 'react';
+import Logo from '../elements/Logo';
+import { useLanguage } from '@/context/LanguageContext';
 
 function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className= "flex flex-col text-white items-center gap-5 mb-8.25">
       <Logo />
 
       <span className="text-center text-base xl:text-lg font-semibold">
-        © 2025 ByronDev. Next step developer. 
+        {t("footer.copyright")}
       </span>
 
       <div className="flex flex-wrap flex-col xl:flex-row  gap-4 xl:gap-0 justify-center items-center font-thin text-sm xl:text-lg cursor-pointer">
-        <a href="#" className="hover:underline">Aviso Legal</a>
+        <a href="#" className="hover:underline">{t("footer.legalNotice")}</a>
         <div className="hidden xl:block w-[2px] h-7 bg-[#00B3B0] mx-2"/>
-        <a href="#" className="hover:underline">Política de Privacidad</a>
+        <a href="#" className="hover:underline">{t("footer.privacyPolicy")}</a>
         <div className="hidden xl:block w-[2px] h-7 bg-[#00B3B0] mx-2"/>
-        <a href="#" className="hover:underline">Política de Cookies</a>
+        <a href="#" className="hover:underline">{t("footer.cookiesPolicy")}</a>
       </div>
       
       <div className="flex flex-col justify-center items-center gap-2.5 xl:gap-4">

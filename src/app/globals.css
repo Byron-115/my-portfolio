@@ -1,22 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600;700&display=swap');
-/*@import "tailwindcss"; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-  --background: #ffffff;
-  --foreground: #030714;
+  --background: #030712;
+  --foreground: #f3f4f6;
+  --accent: #00B3B0;
+  --accent-glow: rgba(0, 179, 176, 0.15);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.font-sf {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  overflow-x: hidden;
+}
+
+/* Restringimos Oxanium para elementos clave de interfaz y cabeceras */
+h1, h2, h3, h4, h5, h6, .font-tech {
+  font-family: 'Oxanium', sans-serif !important;
+}
+
+/* Clases para efectos de brillo de fondo */
+.glow-container {
+  position: relative;
+  width: 100%;
+}
+
+.ambient-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.45;
+}
+
+.glow-1 {
+  top: 5%;
+  left: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 179, 176, 0.4) 0%, transparent 70%);
+}
+
+.glow-2 {
+  top: 35%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 244, 240, 0.3) 0%, transparent 70%);
+}
+
+.glow-3 {
+  bottom: 15%;
+  left: -5%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(0, 90, 89, 0.4) 0%, transparent 70%);
 }
 
 .use-system-font {
@@ -28,31 +74,4 @@ html {
   src: url('/fonts/SF-Compact-Display-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-
-  
-  /* Se usa rem en vez de px ! */
-  --breakpoint-xl: 80rem;
-  --breakpoint-lg: 64rem;
-  --braakpoint-md: 48rem;
-  --breakpoint-sm: 40rem; 
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: 'Oxanium', sans-serif;
 }

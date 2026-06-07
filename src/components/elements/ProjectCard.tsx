@@ -16,11 +16,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
         <a
             href = {repoUrl || '#'}
             target = "_blank"
-            className = "group flex flex-col w-full h-full bg-[#111] hover:bg-[#1a1a1a] transition-colors duration-300 rounded-2xl overflow-hidden border border-gray-800 hover:border-gray-600"
+            className = "group flex flex-col w-full h-full bg-white/[0.02] hover:bg-white/[0.05] backdrop-blur-md transition-all duration-500 rounded-2xl overflow-hidden border border-white/[0.08] hover:border-[#00B3B0]/40 shadow-[0_8px_32px_rgba(0,0,0,0.37)] hover:shadow-[0_8px_32px_rgba(0,179,176,0.15)] hover:-translate-y-1"
         >
             {/* Image Section */}
-            <div className="w-full h-64 bg-gray-200 relative overflow-hidden flex items-center justify-center">
-                <div className="relative w-[90%] h-[85%] shadow-2xl transition-transform duration-500 group-hover:scale-105 group-hover:-translate-y-2 rounded-t-lg overflow-hidden">
+            <div className="w-full h-64 bg-transparent relative overflow-hidden flex items-center justify-center border-b border-white/[0.06]">
+                <div className="relative w-[90%] h-[85%] shadow-2xl transition-transform duration-500 group-hover:scale-[1.03] group-hover:-translate-y-1 rounded-t-lg overflow-hidden">
                     <CldImage
                         src = {imageUrl}
                         alt = {title}
@@ -36,11 +36,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, imageUrl,
             {/* Content Section */}
             <div className="p-6 flex flex-col flex-grow">
                 <div className="flex justify-between items-center mb-3">
-                    <h3 className="text-2xl font-bold text-white group-hover:text-[#00B3B0] transition-colors">
+                    <h3 className="text-2xl font-tech font-bold text-white group-hover:text-[#00B3B0] transition-colors">
                         {title}
                     </h3>
                     {/* Icono de flecha */}
-                    <div className="bg-black text-white rounded-full p-2 transform transition-transform duration-300 group-hover:rotate-45">
+                    <div className="bg-white/10 text-white rounded-full p-2.5 transform transition-all duration-300 group-hover:rotate-45 group-hover:bg-[#00B3B0] group-hover:text-black shadow-inner">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" strokeWidth={2.5} stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
                         </svg>

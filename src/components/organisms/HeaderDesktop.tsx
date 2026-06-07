@@ -2,15 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../elements/Logo";
 import SolidButton from "../elements/SolidButton";
-
-const navLinks = [
-    { href: "#hero", label: "Inicio" },
-    { href: "#experience", label: "Experiencia" },
-    { href: "#about", label: "Sobre mí" },
-    { href: "#projects", label: "Proyectos" },
-    { href: "#contact", label: "Contacto" },
-    { href: "#cv", label: "CV" },
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 interface HeaderDesktopProps {
     setHeaderOffset?: (offset: number) => void;
@@ -21,6 +13,9 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ setHeaderOffset }) => {
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isSticky, setIsSticky] = useState(false);
     const [headerOffset, setLocalHeaderOffset] = useState(0);
+
+    const { language, setLanguage, t } = useLanguage();
+    const links = t("navLinks") as Array<{ href: string; label: string }>;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -62,12 +57,12 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ setHeaderOffset }) => {
                         opacity: 1 - headerOffset / 52,
                     }}
                 >
-                    <div className= "flex flex-row justify-between items-center w-full max-w-266 mx-auto h-13">
+                    <div className= "flex flex-row justify-between items-center w-full max-w-266 mx-auto h-13 px-4">
                         {/* Contenedor Logo + Navlinks de 767x26px */}
                         <div className="flex flex-row justify-start items-center gap-44">
                             <Logo />
                             <nav className="flex flex-nowrap gap-5">
-                                {navLinks.map((link) => (
+                                {links.map((link) => (
                                     <a 
                                         key={link.label}
                                         href={link.href}
@@ -78,11 +73,20 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ setHeaderOffset }) => {
                                 ))}
                             </nav>
                         </div>
-                        <a href="#contact">
-                            <div className="flex-shrink-0 pr-1">
-                                <SolidButton>Contáctame</SolidButton>
-                            </div>
-                        </a>
+                        <div className="flex flex-row items-center gap-4">
+                            <button
+                                onClick={() => setLanguage(language === "es" ? "en" : "es")}
+                                className="text-white hover:text-[#00f4f0] bg-transparent border border-[#005a59] hover:border-[#00B3B0] rounded-full px-3.5 py-1 text-sm font-semibold transition-all duration-300 shadow-[0_0_10px_rgba(0,179,176,0.1)] hover:shadow-[0_0_15px_rgba(0,179,176,0.25)]"
+                                aria-label="Toggle Language"
+                            >
+                                {language === "es" ? "EN" : "ES"}
+                            </button>
+                            <a href="#contact">
+                                <div className="flex-shrink-0 pr-1">
+                                    <SolidButton>{t("contactMeBtn")}</SolidButton>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </header>
             )}
@@ -99,16 +103,16 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ setHeaderOffset }) => {
                 >
                     <div className={`
                         flex items-center rounded-full 
-                        w-[737px] h-[52px] mx-auto
+                        w-[790px] h-[52px] mx-auto
                         shadow-[0_2px_6.9px_0px_##00B3B0] border-1 border-black bg-black
                         `}
                         style={{
                             boxShadow: "0 2px 6.9px 0 #00B3B0",
                         }}
                     >
-                        <div className="flex items-center justify-around w-[657px] h-[28px] mx-auto">
+                        <div className="flex items-center justify-between w-[720px] h-[28px] mx-auto">
                             <nav className="flex flex-nowrap gap-8">
-                                {navLinks.map((link) => (
+                                {links.map((link) => (
                                     <a
                                         key={link.label}
                                         href={link.href}
@@ -118,8 +122,19 @@ const HeaderDesktop: React.FC<HeaderDesktopProps> = ({ setHeaderOffset }) => {
                                     </a>
                                 ))}
                             </nav>
-                            <div className="flex-shrink-0">
-                                <SolidButton>Contáctame</SolidButton>
+                            <div className="flex flex-row items-center gap-4">
+                                <button
+                                    onClick={() => setLanguage(language === "es" ? "en" : "es")}
+                                    className="text-white hover:text-[#00f4f0] bg-transparent border border-[#005a59] hover:border-[#00B3B0] rounded-full px-3 py-0.5 text-xs font-semibold transition-all duration-300"
+                                    aria-label="Toggle Language"
+                                >
+                                    {language === "es" ? "EN" : "ES"}
+                                </button>
+                                <div className="flex-shrink-0">
+                                    <a href="#contact">
+                                        <SolidButton>{t("contactMeBtn")}</SolidButton>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
